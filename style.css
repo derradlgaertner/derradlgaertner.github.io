@@ -1,16 +1,47 @@
 body{
   margin: 0;
   padding: 0;
-  background: background: url(bg.jpg) no-repeat;
-  background-size: cover;
+  height: 100vh;
+}
+main {
+  background: url(/bg.jpg) 100% 0/cover #7F8255;
+  background-repeat: no-repeat;
+  z-index: 0;
+  min-height: 100%;
+  position: relative;
+}
+footer {
+  height: 40px;
+  width: 100%;
+  min-height: 40px;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  font-size: 14px;
+  background: #222;
+  font-family: 'Century Gothic',sans-serif;
+  text-align: center;
+}
+footer a {
+  color: #d2f3f1;
+  text-align: center;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#footer_push {
+  position: absolute;
+  height: 39px;
+  width: 100%;
+  z-index: -999;
 }
 .box{
-  width: 450px;
+  max-width: 450px;
   background: rgba(0, 0, 0, 0.4);
   padding: 40px;
   text-align: center;
   margin: auto;
-  margin-top: 5%;
   color: white;
   font-family: 'Century Gothic',sans-serif;
 }
@@ -20,7 +51,7 @@ body{
   height: 200px;
 }
 .box h1{
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 4px;
   font-weight: 100;
 }
@@ -49,4 +80,13 @@ ul{
 }
 .box li a:hover{
   color: #b9b9b9;
+}
+
+@media only screen and (min-width: 600px) {
+  .box h1{
+    font-size: 40px;
+  }
+  /* .box { */
+    /* margin-top: 5%; */
+  /* } */
 }
