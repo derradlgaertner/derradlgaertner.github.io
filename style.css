@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   height: 100vh;
+  background-color: #7F8255;
 }
 main {
   background: url(/bg.jpg) 100% 0/cover #7F8255;
